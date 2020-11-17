@@ -42,12 +42,12 @@ const MOVIES_DATA = [
 
 const MovieList = () => {
   return MOVIES_DATA.map((name) => (
-    <Text>
-      {' '}
-      {'\n '}
-      {name.title} {'\n'} {name.year} {'\n'} {<Image source={name.poster} />}{' '}
-      {'\n '}
-    </Text>
+    <View>
+      <Text>
+        {name.title} {name.year}
+      </Text>
+      <Image source={name.poster} />
+    </View>
   ));
 };
 

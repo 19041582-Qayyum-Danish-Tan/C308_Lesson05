@@ -42,11 +42,12 @@ const PRODUCTS_DATA = [
 
 const smeList = () => {
   return PRODUCTS_DATA.map((smeShow) => (
-    <Text>
-      {' '}
-      {smeShow.name} {'\n '} {smeShow.description} {' \n'}{' '}
-      {<Image source={smeShow.picture} />} {'\n '}
-    </Text>
+    <View>
+      <Text>
+        {smeShow.name} {smeShow.description}
+      </Text>
+      <Image source={smeShow.picture} />
+    </View>
   ));
 };
 
