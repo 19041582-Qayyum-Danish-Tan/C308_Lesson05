@@ -22,7 +22,6 @@ const App: () => React$Node = () => {
         <Movie />
         <MovieList />
         <SMEList />
-
       </ScrollView>
     </View>
   );
